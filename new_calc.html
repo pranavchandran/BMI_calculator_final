@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <source src="./latest_calc_bmi.js" type="">
+    <link rel="stylesheet" href="./style.css">
+    <title>lat_calc</title>
+</head>
+<body>
+    <h2>BMI Calculator</h2>
+<form id="form_calculator">
+
+<div>
+    <fieldset id="calculator_fieldset_gender">
+        <legend class="db fwb pr">
+            <svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+                <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+
+                </path>
+            </svg>
+            Gender
+        </legend>
+        <input class="ln pa" id="calculator_male" name="gender" type="radio" value="male">
+        <label class="cp dib pr vat" for="calculator_male">Male</label>
+        <input class="ln pa" id="calculator_female" name="gender" type="radio" value="female">
+        <label class="cp dib pr vat" for="calculator_female">Female</label>
+    </fieldset>
+
+    <fieldset id="calculator_fieldset_age">
+        <legend class="db fwb pr">
+            <svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+                <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+
+                </path>
+            </svg>Age</legend>
+            <input class="dib vat" id="calculator_age" name="age" type="number" value="0">
+            <label class="cp dib pr vat" for="calculator_age">Years Old</label>
+        </fieldset>
+
+    <fieldset id="calculator_fieldset_height">
+        <legend class="db fwb pr">
+            <svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+                <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+            </svg>Height</legend>
+            <input class="ln pa" data-id="calculator_div_feet" id="calculator_units_feet" name="height" type="radio" value="feet">
+            <label class="cp dib pr vat" for="calculator_units_feet">Feet &amp; Inches</label>
+            <input class="ln pa" data-id="calculator_div_cms" id="calculator_units_cms" name="height" type="radio" value="cms">
+            <label class="cp dib pr vat" for="calculator_units_cms">Centimetres</label>
+            <div class="oh pr" id="calculator_div_feet">
+                <input class="dib vat" id="calculator_feet" name="feet" type="number" value="0">
+                <label class="cp dib pr vat" for="calculator_feet">Feet</label>
+                <input class="dib vat" id="calculator_inches" name="inches" type="number" value="0">
+                <label class="cp dib pr vat" for="calculator_inches">Inches</label>
+            </div>
+            <div class="oh pr hide" id="calculator_div_cms">
+                <input class="dib vat" id="calculator_cms" name="cms" type="number" value="0">
+                <label class="cp dib pr vat" for="calculator_cms">Centimetres</label>
+            </div>
+        </fieldset>
+
+    <fieldset id="calculator_fieldset_weight">
+        <legend class="db fwb pr">
+            <svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+                <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+
+                </path></svg>Weight</legend>
+                <input class="ln pa" data-id="calculator_div_stones" id="calculator_units_stones" name="weight" type="radio" value="stones">
+                <label class="cp dib pr vat" for="calculator_units_stones">Stones &amp; Pounds</label>
+                <input class="ln pa" data-id="calculator_div_kgs" id="calculator_units_kgs" name="weight" type="radio" value="kgs">
+                <label class="cp dib pr vat" for="calculator_units_kgs">Kilos</label>
+                <div class="hide oh pr" id="calculator_div_stones">
+                    <input class="dib vat" id="calculator_stones" name="stones" type="number" value="0">
+                    <label class="cp dib pr vat" for="calculator_stones">Stone</label>
+                    <input class="dib vat" id="calculator_pounds" name="pounds" type="number" value="0">
+                    <label class="cp dib pr vat" for="calculator_pounds">Pounds</label></div>
+                    <div class="hide oh pr" id="calculator_div_kgs">
+                        <input class="dib vat" id="calculator_kgs" name="kgs" type="number" value="0">
+                        <label class="cp dib pr vat" for="calculator_kgs">Kilogrammes</label>
+                    </div>
+                </fieldset>
+        </div>
+
+<div>
+    <fieldset id="calculator_fieldset_activity">
+        <legend class="db fwb pr"><svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+            <path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+        </svg>Activity Level</legend>
+        <input class="ln pa" id="calculator_activity_1" name="activity" type="radio" value="1.2">
+        <label class="cp db pr vat" for="calculator_activity_1">
+            <span class="db fwb">Sedentary: </span>Little or no exercise / desk job</label>
+            <input class="ln pa" id="calculator_activity_2" name="activity" type="radio" value="1.375">
+            <label class="cp db pr vat" for="calculator_activity_2">
+                <span class="db fwb">Lightly Active: </span>Light exercise / sports 1-3 days/week</label>
+                <input class="ln pa" id="calculator_activity_3" name="activity" type="radio" value="1.55">
+                <label class="cp db pr vat" for="calculator_activity_3">
+                    <span class="db fwb">Moderately Active: </span>Moderate exercise / sports 3-5 days/week
+                </label>
+                <input class="ln pa" id="calculator_activity_4" name="activity" type="radio" value="1.725">
+                <label class="cp db pr vat" for="calculator_activity_4">
+                    <span class="db fwb">Very Active: </span>Heavy exercise / sports 6-7 days/week</label>
+                    <input class="ln pa" id="calculator_activity_5" name="activity" type="radio" value="1.9">
+                    <label class="cp db pr vat" for="calculator_activity_5">
+                        <span class="db fwb">Extremely Active: </span>Very heavy exercise / Physical job / training 2x/day</label>
+                    </fieldset><button class="cp pr tac ttu" type="submit" onclick="calculate(event)">Calculate <svg class="vat" data-mdi="arrow-right" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+
+                        </path>
+                    </svg>  
+                </button>
+            </div>
+</form>
+
+	<ul class="lsn" id="calculator_results">
+		<li class="tac" id="calculator_tdee">
+			<span id="calculator_tdee_span" class="db tac wsnw"></span>TDEE</li>
+			<li class="tac" id="calculator_bmi">
+				<span id="calculator_bmi_span" class="db tac wsnw"></span>BMI</li>
+				<li class="tac" id="calculator_category">
+					<span id="calculator_category_span" class="db tac wsnw"></span>Category</li>
+				</ul>
+
+<p>Your Body Mass Index (BMI) is a very good indicator of how your weight affects your health. Excess weight increases your risk of many illnesses. The more overweight you are, the greater the risk. Taking responsibility for your own health is the best decision you can make.</p>
+
+<h3>Total Daily Energy&nbsp;Expenditure (TDEE)</h3>
+
+<p>Calculating your TDEE is useful if you want to estimate how many calories you are consuming before you lose weight. Most people underestimate&nbsp;their daily calorie intake. One of the interesting experiences when patients are on Total Diet Replacement&nbsp;or Meal Replacement Plan is that people realise just how many calories they are consuming from poor eating habits and choices.</p>
+
+<p>When you have finished&nbsp;dieting and reach your target weight you should recalculate your TDEE&nbsp;to give yourself a rough measure of how many calories it takes to maintain your new lower weight.</p>
+
+<p>TDEE is much more useful than metabolic rate calculations as it takes into account individual lifestyle factors. The factors are your height, age, gender, weight and level of activity.</p></main>
+</body>
+</html>

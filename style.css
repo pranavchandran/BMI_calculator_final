@@ -1,0 +1,43 @@
+li#calculator_tdee.tac{
+	color:#FFFFFF;
+	font: 24px arial sans-serif;
+	background-color: #60269E;
+	padding: 15px;
+}
+li#calculator_bmi.tac{
+	color: #FFFFFF;
+	font: 24px arial sans-serif;
+	background: #0077c4;
+	margin: 0px 0px 15px;
+	padding: 15px;
+}
+li#calculator_category.tac{
+	color: #FFFFFF;
+	font: 24px arial sans-serif;
+	background-color: #E1138A;
+	margin: 0px 0px 15px;
+	padding: 15px;
+}
+ul#calculator_results.lsn{
+	margin: 0px 0px 60px;
+	padding: 15px 0px;
+}
+
+#calculator_results>li{
+	padding:15px;
+}
+#calculator_tdee{
+	background:var(--primary);
+}
+#calculator_bmi{
+	background:var(--shadow);
+}
+#calculator_category{
+	background:var(--tertiary);
+}
+#calculator_results span {
+    font-size: 50px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 0 5px;
+    transition: font .25s linear;

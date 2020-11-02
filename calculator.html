@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./calculator.js"></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Calculator</title>
+</head>
+<body>
+	<!-- <button type="button" onclick="myFunction(event)">Set background color</button> -->
+
+	<form id="form_calculator">
+		<fieldset id="calculator_fieldset_gender">
+			<legend class="">
+				<svg class="" data-mdi="alert" viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+					</path>
+				</svg>
+				Gender
+			</legend>
+
+			<input id="calculator_male" name="gender" type="radio" value="male">
+
+			<!-- <input class="" id="calculator_male" name="gender" type="radio" value="male"> -->
+			
+			<label class=""" for="calculator_male">Male</label>
+
+			<!-- a -->
+			<label class="" for="calculator_female">Female</label>
+			
+			<input id="calculator_female" name="gender" type="radio" value="female">
+			<!-- <label for="calculator_female">Female</label> -->
+		</fieldset>
+	
+	<!-- <button type="button" onclick="myFunction(event)">Set background color</button> -->
+
+
+		<!-- <fieldset id="calculator_fieldset_age">
+			<legend class="db fwb pr"><svg class="pa" data-mdi="alert" viewBox="0 0 24 24" fill="#fff">
+				<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+
+				</path>
+			</svg>
+			Age
+		</legend> -->
+			<legend>
+				Age
+				<!-- <svg viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+				</svg> -->
+			</legend>
+
+			<legend class="db fwb pr">
+				<!-- <svg class="pa" data-mdi="alert" viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z">
+
+					</path>
+				</svg> -->
+				Age
+			</legend>
+
+
+			<input id="calculator_age" name="age" type="number" value="0">
+			<label for="calculator_age">Years Old</label>
+		</fieldset>
+		<fieldset id="calculator_fieldset_height">
+			<legend>
+				Height
+				<svg viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+				</svg>
+			</legend>
+			<input data-id="calculator_div_feet" id="calculator_units_feet" name="height" type="radio" value="feet">
+			<label for="calculator_units_feet">Feet &amp; Inches</label>
+			<input data-id="calculator_div_cms" id="calculator_units_cms" name="height" type="radio" value="cms">
+			<label for="calculator_units_cms">Centimetres</label>
+			<div id="calculator_div_feet">
+				<input id="calculator_feet" name="feet" type="number" value="0">
+				<label for="calculator_feet">Feet</label>
+				<input id="calculator_inches" name="inches" type="number" value="0">
+				<label for="calculator_inches">Inches</label>
+			</div>
+			<div id="calculator_div_cms">
+				<input id="calculator_cms" name="cms" type="number" value="0">
+				<label for="calculator_cms">Centimetres</label>
+			</div>
+		</fieldset>
+		<fieldset id="calculator_fieldset_weight">
+			<legend>
+				Weight
+				<svg viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+				</svg>
+			</legend>
+			<input data-id="calculator_div_stones" id="calculator_units_stones" name="weight" type="radio" value="stones">
+			<label for="calculator_units_stones">Stones &amp; Pounds</label>
+			<input data-id="calculator_div_kgs" id="calculator_units_kgs" name="weight" type="radio" value="kgs">
+			<label for="calculator_units_kgs">Kilos</label>
+			<div id="calculator_div_stones">
+				<input id="calculator_stones" name="stones" type="number" value="0">
+				<label for="calculator_stones">Stone</label>
+				<input id="calculator_pounds" name="pounds" type="number" value="0">
+				<label for="calculator_pounds">Pounds</label></div><div id="calculator_div_kgs">
+				<input id="calculator_kgs" name="kgs" type="number" value="0">
+				<label for="calculator_kgs">Kilogrammes</label>
+			</div>
+		</fieldset>
+		<fieldset id="calculator_fieldset_activity">
+			<legend>
+				Activity Level
+				<svg viewBox="0 0 24 24">
+					<path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"></path>
+				</svg>
+			</legend>
+			<input id="calculator_activity_1" name="activity" type="radio" value="1.2">
+			<label for="calculator_activity_1">
+				<span>Sedentary: </span>
+				Little or no exercise / desk job
+			</label>
+			<input id="calculator_activity_2" name="activity" type="radio" value="1.375">
+			<label for="calculator_activity_2">
+				<span>Lightly Active: </span>
+				Light exercise / sports 1-3 days/week
+			</label>
+			<input id="calculator_activity_3" name="activity" type="radio" value="1.55">
+			<label for="calculator_activity_3">
+				<span>Moderately Active: </span>
+				Moderate exercise / sports 3-5 days/week
+			</label>
+			<input id="calculator_activity_4" name="activity" type="radio" value="1.725">
+			<label for="calculator_activity_4">
+				<span>Very Active: </span>
+				Heavy exercise / sports 6-7 days/week
+			</label>
+			<input id="calculator_activity_5" name="activity" type="radio" value="1.9">
+			<label for="calculator_activity_5">
+				<span>Extremely Active: </span>
+				Very heavy exercise / Physical job / training 2x/day
+			</label>
+		</fieldset>
+		<button type="submit" onclick="myFunction(event)">
+			Calculate
+			<svg viewBox="0 0 24 24">
+				<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+			</svg>
+		</button>
+	</form>
+	<!-- <ul id="calculator_results">
+		<li id="calculator_tdee">
+			<span class="db tac wsnw"></span>TDEE
+		</li>
+		<li id="calculator_bmi">
+			<span class="db tac wsnw"></span>BMI
+		</li>
+		<li id="calculator_category">
+			<span></span>Category
+		</li>
+	</ul> -->
+
+	<ul class="lsn" id="calculator_results">
+		<li class="tac" id="calculator_tdee">
+			<span id="calculator_tdee_span" class="db tac wsnw"></span>TDEE</li>
+			<li class="tac" id="calculator_bmi">
+				<span id="calculator_bmi_span" class="db tac wsnw"></span>BMI</li>
+				<li class="tac" id="calculator_category">
+					<span id="calculator_category_span" class="db tac wsnw"></span>Category</li>
+				</ul>
+</body>
+</html>
